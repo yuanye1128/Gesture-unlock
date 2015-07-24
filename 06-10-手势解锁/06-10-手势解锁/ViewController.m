@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MBProgressHUD+MJ.h"
 #import "YYView.h"
 @interface ViewController ()<YYViewDelegate>
 @property (weak, nonatomic) IBOutlet YYView *unclock;
@@ -15,8 +16,10 @@
 @end
 
 @implementation ViewController
+//验证密码是否正确
 - (BOOL)yyView:(YYView *)yyView withPassword:(NSString *)password{
-    if ([password isEqualToString:@"012"]) {
+    if ([password isEqualToString:@"03678"]) {   ////默认为03678
+        [MBProgressHUD showSuccess:@"Success!"];
         return YES;
     }else{
         return NO;

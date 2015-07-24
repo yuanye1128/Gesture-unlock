@@ -15,6 +15,9 @@
 		95296E171B28607B00AB2489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95296E151B28607B00AB2489 /* LaunchScreen.xib */; };
 		95296E231B28607B00AB2489 /* _6_10_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95296E221B28607B00AB2489 /* _6_10_____Tests.m */; };
 		95296E331B28637100AB2489 /* YYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95296E321B28637100AB2489 /* YYView.m */; };
+		95DE50751B629B520067B96A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DE50711B629B520067B96A /* MBProgressHUD+MJ.m */; };
+		95DE50761B629B520067B96A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95DE50721B629B520067B96A /* MBProgressHUD.bundle */; };
+		95DE50771B629B520067B96A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DE50741B629B520067B96A /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		95296E221B28607B00AB2489 /* _6_10_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_10_____Tests.m"; sourceTree = "<group>"; };
 		95296E311B28637100AB2489 /* YYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYView.h; sourceTree = "<group>"; };
 		95296E321B28637100AB2489 /* YYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYView.m; sourceTree = "<group>"; };
+		95DE50701B629B520067B96A /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		95DE50711B629B520067B96A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		95DE50721B629B520067B96A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		95DE50731B629B520067B96A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		95DE50741B629B520067B96A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 		95296E2F1B2860B000AB2489 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				95DE506F1B629B520067B96A /* MBProgressHUD */,
 				95296E0A1B28607B00AB2489 /* AppDelegate.h */,
 				95296E0B1B28607B00AB2489 /* AppDelegate.m */,
 			);
@@ -162,6 +171,18 @@
 				95296E2C1B28608900AB2489 /* Model */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		95DE506F1B629B520067B96A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				95DE50701B629B520067B96A /* MBProgressHUD+MJ.h */,
+				95DE50711B629B520067B96A /* MBProgressHUD+MJ.m */,
+				95DE50721B629B520067B96A /* MBProgressHUD.bundle */,
+				95DE50731B629B520067B96A /* MBProgressHUD.h */,
+				95DE50741B629B520067B96A /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95296E121B28607B00AB2489 /* Main.storyboard in Resources */,
+				95DE50761B629B520067B96A /* MBProgressHUD.bundle in Resources */,
 				95296E171B28607B00AB2489 /* LaunchScreen.xib in Resources */,
 				95296E141B28607B00AB2489 /* Images.xcassets in Resources */,
 			);
@@ -265,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95296E331B28637100AB2489 /* YYView.m in Sources */,
+				95DE50771B629B520067B96A /* MBProgressHUD.m in Sources */,
+				95DE50751B629B520067B96A /* MBProgressHUD+MJ.m in Sources */,
 				95296E0F1B28607B00AB2489 /* ViewController.m in Sources */,
 				95296E0C1B28607B00AB2489 /* AppDelegate.m in Sources */,
 				95296E091B28607B00AB2489 /* main.m in Sources */,
@@ -460,6 +484,7 @@
 				95296E281B28607B00AB2489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95296E291B28607B00AB2489 /* Build configuration list for PBXNativeTarget "06-10-手势解锁Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				95296E2B1B28607B00AB2489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
